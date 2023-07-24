@@ -1,7 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
-// #include "LogLine.h"
+#include "LogLine.h"
 
 class FileRead
 {

@@ -23,7 +23,7 @@ int main(){
         vector<LogLine> dataset = file_object.getDataset();
 
         if(flag==1){
-            int pid,vid;
+            string pid,vid;
             cout<<"Enter the value of PID and VID: "<<endl;
             cin>>pid>>vid;
             Display pobj(dataset);
