@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include "FileRead.h"
+#include "Display.h"
 
 using namespace std;
 
@@ -18,8 +19,8 @@ int main(){
         cout<<"--------------------------------------"<<endl;
         cin>>flag;
 
-        FlagRead file_object(file_name);
-        file_object.read();
+        FileRead file_object(file_name);
+        file_object.readFile();
         vector<LogLine> dataset = file_object.getDataset();
 
         if(flag==1){
