@@ -22,31 +22,38 @@ void LogLine::doParsing(string input) {
 
 void LogLine::setMemberVariableValues(string input, int sc) {
     switch(sc) {
-        case 1:
+        case 1: {
             mDate = input;
             break;
-        case 2:
+        }
+        case 2: {
             TimeParse tobj(input);
             mTimeMap["Hour"] = tobj.getHour();
             mTimeMap["Minute"] = tobj.getMinute();
             mTimeMap["Second"] = tobj.getSecond();
             mTimeMap["Millisecond"] = tobj.getMillisecond();
             break;
-        case 3:
+        }
+        case 3: {
             mProcessId = input;
             break;
-        case 4:
+        }
+        case 4: {
             mThreadId = input;
             break;
-        case 5:
+        }
+        case 5: {
             mLogLevel = input;
             break;
-        case 6:
+        }
+        case 6: {
             mLogMessage = input;
             break;
-        default:
+        }
+        default: {
             cout << "Class LogLine: Function setMemberVariableValues: Getting into the default section of the switch case. Check sc variable value." << endl;
             break;
+        }
     }
 }
 

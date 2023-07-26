@@ -35,7 +35,7 @@ int main(){
             cout<<"Enter the value for start time and end time: "<<endl;
             cin>>startTime>>endTime;
             Display pobj(dataset);
-            pobj.printTimeRange(pid,vid);
+            pobj.printTimeRange(startTime,endTime);
         }
         else{
             cout<<"Enter valid flag value as mentioned"<<endl;
