@@ -13,7 +13,7 @@ private:
     map<string, int> mTimeMap;
     string mProcessId;
     string mThreadId;
-    string mLogLevel;
+    string mLogLevel; 
     string mLogMessage;
 
 public:
@@ -30,5 +30,7 @@ public:
     string getLogLevel();
     string getLogMessage();
 };
+
+
 
 #endif

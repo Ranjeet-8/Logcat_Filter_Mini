@@ -81,3 +81,4 @@ string LogLine::getLogLevel() {
 string LogLine::getLogMessage() {
     return mLogMessage;
 }
+
